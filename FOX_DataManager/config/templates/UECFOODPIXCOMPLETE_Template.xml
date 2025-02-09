@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///Volumes/Frederick%20Harris%20II/FOX%20Data%20Manager/config/dataset_template.xsd">
+	<rootFolder>
+		<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOODPIXCOMPLETE</path>
+		<name>UECFOODPIXCOMPLETE</name>
+	</rootFolder>
+	<folders>
+		<folder>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOODPIXCOMPLETE/test</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOODPIXCOMPLETE/train</path>
+			</paths>
+			<actions>
+				<action>EXTRACT_FOLDER_NAME_AS_DATA_SPLIT</action>
+			</actions>
+		</folder>
+		<folder>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOODPIXCOMPLETE/test/images</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOODPIXCOMPLETE/train/images</path>
+			</paths>
+			<actions>
+				<action>CREATE_FOOD_ITEM_FROM_IMAGE</action>
+			</actions>
+		</folder>
+		<folder>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOODPIXCOMPLETE/test/masks</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOODPIXCOMPLETE/train/masks</path>
+			</paths>
+			<actions>
+				<action>MASK_MATCH_BY_NAME</action>
+			</actions>
+		</folder>
+	</folders>
+</template>			

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+<groupDatasetFolders/>
+<datasets>
+</datasets>
+<configurationPaths>
+	<applicationFolderPath>"---Path to FOX_DataManager Folder storing application---"</applicationFolderPath>
+	<configurationPath>"---Path to config folder in FOX_DataManager Folder---"</configurationPath>
+	<outputPath>"---Path to output folder in FOX_DataManager Folder---"</outputPath>
+</configurationPaths>
+<templates>
+	<defaultTemplateFolder>"---Path to templates folder in config folder---"</defaultTemplateFolder>
+	<datasetTemplates>
+	</datasetTemplates>
+</templates>
+	<imageExtensions>
+		<type>jpeg</type>
+		<type>jpg</type>
+		<type>png</type>
+		<type>gif</type>
+		<type>tif</type>
+	</imageExtensions>
+	<videoExtensions>
+		<type>avi</type>
+	</videoExtensions>
+	<annotationExtensions>
+		<type>json</type>
+		<type>xml</type>
+		<type>txt</type>
+		<type>csv</type>
+		<type>xls</type>
+		<type>xlsx</type>
+		<type>tsv</type>
+	</annotationExtensions>
+	<spreadsheetExtensions>
+		
+	</spreadsheetExtensions>
+	<ignoreExtensions>
+		<type>DS_Store</type>
+		<type>md</type>
+		<type>py</type>
+		<type>hdr</type>
+		<type>dat</type>
+		<type>zip</type>
+		<type>zip.tar.gz</type>
+		<type>db</type>
+		<type>tar</type>
+		<type>m</type>
+		<type>mat</type>
+		<type>gz</type>
+	</ignoreExtensions>
+	<connectorCredentials>
+		<type>postgres</type>
+		<url>"---Insert database IP---"</url>
+		<username>"---Insert desired database username---"</username>
+	</connectorCredentials>
+	<processors>
+		<minProcessors>10</minProcessors>
+		<maxProcessors>12</maxProcessors>
+	</processors>
+</configuration>

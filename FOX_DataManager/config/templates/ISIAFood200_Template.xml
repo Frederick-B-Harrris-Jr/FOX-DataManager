@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///Volumes/Frederick%20Harris%20II/FOX%20Data%20Manager/config/dataset_template.xsd">
+	<rootFolder>
+		<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200</path>
+		<name>ISIAFood200</name>
+	</rootFolder>
+
+	<folders>
+		<folder>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_1</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_2</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_3</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_4</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_5</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_6</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_7</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_8</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_9</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_10</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_11</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_12</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_13</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_14</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_15</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_16</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_17</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_18</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_19</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/isiaFood200_v2_20</path>
+			</paths>
+			<actions>
+				<action>CREATE_FOOD_ITEM_FROM_IMAGE</action>
+			</actions>
+
+			<levels>
+				<level>
+					<step>0</step>
+					<actions>
+						<action>EXTRACT_FOLDER_NAME_AS_CATEGORY</action>
+					</actions>
+				</level>
+			</levels>
+		</folder>
+	</folders>
+	<annotationFiles>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/metadata/val_finetune_v2.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/metadata/test_finetune_v2.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/metadata/train_finetune_v2.txt</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>DATA_SPLIT</annotationType>
+			<actions>
+				<action>ISIAFOOD200_DATA_SPLIT</action>
+			</actions>
+		</annotationFile>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/metadata/class_ingredient.txt</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>ISIAFOOD200_INGREDIENT_EXTRACT</action>
+			</actions>
+		</annotationFile>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ISIAFood200/metadata/ingredient_list_label.txt</path>
+			</paths>
+			<priority>2</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>ISIAFOOD200_INGREDIENT_RELABEL</action>
+			</actions>
+		</annotationFile>
+	</annotationFiles>
+
+</template>			

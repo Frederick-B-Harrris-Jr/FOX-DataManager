@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///Volumes/Frederick%20Harris%20II/FOX%20Data%20Manager/config/dataset_template.xsd">
+	<rootFolder>
+		<path>/Volumes/Frederick Harris II/Dissertation Data/RWMF</path>
+		<name>RWMF</name>
+	</rootFolder>
+	<folders>
+		<folder>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/RWMF/Foodlog/Image</path>
+			</paths>
+			<actions>
+				<action>CREATE_FOOD_ITEM_FROM_IMAGE</action>
+			</actions>
+		</folder>
+	</folders>
+	<annotationFiles>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/RWMF/Foodhealth/im_label.csv</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>RWMF_LABEL_EXTRACT</action>
+			</actions>
+		</annotationFile>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/RWMF/Foodlog/data_category.csv</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>RWMF_CATEGORY_EXTRACT</action>
+			</actions>
+		</annotationFile>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/RWMF/Foodhealth/composition.csv</path>
+			</paths>
+			<priority>2</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>RWMF_COMPOSITION_EXTRACT</action>
+			</actions>
+		</annotationFile>
+	</annotationFiles>
+</template>			

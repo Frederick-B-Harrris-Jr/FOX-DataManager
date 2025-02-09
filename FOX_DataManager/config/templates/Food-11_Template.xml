@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///Volumes/Frederick%20Harris%20II/FOX%20Data%20Manager/config/dataset_template.xsd">
+	<rootFolder>
+		<path>/Volumes/Frederick Harris II/Dissertation Data/food-11</path>
+		<name>Food-11</name>
+	</rootFolder>
+	<levels>
+		<level>
+			<step>0</step>
+			<applicabilities>
+				<applicability>ALL_FOLDERS</applicability>
+			</applicabilities>
+			<actions>
+				<action>EXTRACT_FOLDER_NAME_AS_DATA_SPLIT</action>
+				<action>CREATE_FOOD_ITEM_FROM_IMAGE</action>
+			</actions>
+		</level>
+	</levels>
+</template>			

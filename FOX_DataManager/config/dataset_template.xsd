@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Simple Elements -->
+    <xs:element name="path" type="xs:string"/>
+    <xs:element name="name" type="xs:string"/>
+        
+     <xs:element name="step">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+          <xs:minInclusive value="0"/>
+        </xs:restriction>
+      </xs:simpleType>
+     </xs:element>
+     
+     <xs:element name="priority">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+          <xs:minInclusive value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+     </xs:element>
+
+    
+    <!-- Simple Enumeration Elements -->
+     <xs:element name="annotationType">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="COLOR_MAP"/>
+          <xs:enumeration value="DATASET_DESCRIPTION"/>
+          <xs:enumeration value="DATA_SPLIT"/>
+          <xs:enumeration value="DEFINES_INSTRUCTION_INSTANCES"/>
+          <xs:enumeration value="DEFINES_ITEM_INSTANCES"/>
+          <xs:enumeration value="FILE_TO_INSTANCES"/>
+          <xs:enumeration value="SPREADSHEET"/>
+          <xs:enumeration value="NONE"/>
+        </xs:restriction>
+      </xs:simpleType>
+     </xs:element>
+     
+     <xs:element name="ignore">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="ALL"/>
+          <xs:enumeration value="ALL_FOLDERS"/>
+          <xs:enumeration value="ALL_LEVELS"/>
+          <xs:enumeration value="CONTAINING_FOLDER"/>
+          <xs:enumeration value="CURRENT_LEVEL"/>
+          <xs:enumeration value="PERMISSIBLE_CREATE"/>
+          <xs:enumeration value="NONE"/>
+        </xs:restriction>
+      </xs:simpleType>
+     </xs:element>
+
+    
+    <xs:element name="applicability">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="ALL"/>
+          <xs:enumeration value="ALL_FILES"/>
+          <xs:enumeration value="ALL_FOLDERS"/>
+          <xs:enumeration value="PER_FILE"/>
+          <xs:enumeration value="PER_FOLDER"/>
+          <xs:enumeration value="PER_LEVEL"/>
+          <xs:enumeration value="NONE"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+    
+    <xs:element name="action">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="CREATE_FOOD_ITEM_FROM_IMAGE"/>
+          <xs:enumeration value="CREATE_ITEM_FROM_IMAGE"/>
+          <xs:enumeration value="CREATE_ITEM_BASED_ON_FOOD_NON_FOOD"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_AS_DATA_SPLIT"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_CONTAINING_DATA_SPLIT"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_AS_CATEGORY"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_AS_NAME"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_AS_ENVIRONMENT"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_AS_FOOD_CATEGORY"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_AS_FOOD_CATEGORY_CUSTOM_1"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_AS_CATEGORY_CUSTOM_1"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_AS_CATEGORY_CUSTOM_2"/>
+          <xs:enumeration value="EXTRACT_FOLDER_NAME_AS_CUISINE"/>
+          <xs:enumeration value="FOOD_RELATED_CONTENTS"/>
+          <xs:enumeration value="NON_FOOD_RELATED_CONTENTS"/>
+          <xs:enumeration value="NON_FOOD_IF_ONLY_ACTION"/>
+          <xs:enumeration value="MASK_MATCH_BY_NAME"/>
+          <xs:enumeration value="CAMER_FOOD_10_PARSE"/>
+          <xs:enumeration value="DATE_FRUIT_DATASETS_PARSE"/>
+          <xs:enumeration value="DURUM_WHEAT_DATASET_PARSE"/>
+          <xs:enumeration value="PISTACHIO_IMAGE_DATASET_PARSE"/>
+          <xs:enumeration value="DRY_BEAN_DATASET_PARSE"/>
+          <xs:enumeration value="FILENAME_AS_FRAME_NUMBER"/>
+          <xs:enumeration value="VIDEO_FILE_TO_IMAGE_SOURCE"/>
+          <xs:enumeration value="FILENAME_CONTAINING_DATA_SPLIT_TO_CONTENTS_FILENAME"/>
+          <xs:enumeration value="FILENAME_AS_DATA_SPLIT_TO_CONTENTS_FILENAME"/>
+          <xs:enumeration value="FILENAME_CONTAINING_DATA_SPLIT_TO_CONTENTS_FILENAME_AND_VERIFICATION"/>
+          <xs:enumeration value="FILENAME_CONTAINING_DATA_SPLIT_TO_CONTENTS_FILENAME_AND_CATEGORY_LABEL"/>
+          <xs:enumeration value="FILENAME_CONTAINING_DATA_SPLIT_TO_CONTENTS_FILENAME_AND_IGNORE_CATEGORY_LABEL"/>
+          <xs:enumeration value="ECUSTFD_ANNOTATION_PARSE"/>
+          <xs:enumeration value="ECUSTFD_DENSITY_PARSE"/>
+          <xs:enumeration value="EPICURIOUS_RECIPE_JSON_INGEST"/>
+          <xs:enumeration value="EGOCENTRIC_DATA_SPLIT_AND_BOUNDING_BOX"/>
+          <xs:enumeration value="CATEGORY_NAME_TO_CATEGORY_LABEL"/>
+          <xs:enumeration value="CATEGORY_LABEL_TO_CATEGORY_NAME"/>
+          <xs:enumeration value="CATEGORY_LABEL_TO_CATEGORY_NAME_NO_HEADER"/>
+          <xs:enumeration value="EXTRACT_FILENAME_AS_NAME"/>
+          <xs:enumeration value="EXTRACT_FILENAME_AS_NAME_CUSTOM_1"/>
+          <xs:enumeration value="FFOCAT_CATEGORY_INGREDIENT_PARSE"/>
+          <xs:enumeration value="FOODLOGODET1500_ANNOTATION_PARSE"/>
+          <xs:enumeration value="FOODPICS_EXTENDED_ANNOTATION_PARSE"/>
+          <xs:enumeration value="FRUIT_360_ANNOTATION_PARSE"/>
+          <xs:enumeration value="FOODX251_CLASS_LIST_PARSE"/>
+          <xs:enumeration value="FOODX251_DATA_SPLIT_PARSE"/>
+          <xs:enumeration value="VEGFRU_DATA_SPLIT"/>
+          <xs:enumeration value="ISIAFOOD200_DATA_SPLIT"/>
+          <xs:enumeration value="ISIAFOOD200_INGREDIENT_EXTRACT"/>
+          <xs:enumeration value="ISIAFOOD200_INGREDIENT_RELABEL"/>
+          <xs:enumeration value="ISIAFOOD500_DATA_SPLIT"/>
+          <xs:enumeration value="SUSHI50_DATA_SPLIT"/>
+          <xs:enumeration value="KENYAN104K_DATA_EXTRACT"/>
+          <xs:enumeration value="KENYAN104K_DATA_SPLIT"/>
+          <xs:enumeration value="KENYANFOOD13_DATA_EXTRACT"/>
+          <xs:enumeration value="MAFOOD121_DATA_EXTRACT"/>
+          <xs:enumeration value="MANGO_DATASET_EXTRACT"/>
+          <xs:enumeration value="MENU_MATCH_INGREDIENT_EXTRACT"/>
+          <xs:enumeration value="MENU_MATCH_INGREDIENT_DEFINE"/>
+          <xs:enumeration value="MYFOODREPO_DATA_EXTRACT"/>
+          <xs:enumeration value="NUTRIGREEN_ANNOTATION"/>
+          <xs:enumeration value="ZSFOOD_DATA_EXTRACT"/>
+          <xs:enumeration value="RWMF_LABEL_EXTRACT"/>
+          <xs:enumeration value="RWMF_CATEGORY_EXTRACT"/>
+          <xs:enumeration value="RWMF_COMPOSITION_EXTRACT"/>
+          <xs:enumeration value="SCHOOL_LUNCH_DATA_EXTRACT"/>
+          <xs:enumeration value="SCHOOL_LUNCH_LABEL_DEFINE"/>
+          <xs:enumeration value="ANNOTATION_CONTENTS_FILENAME_BOUNDING_BOX_CORNERS"/>
+          <xs:enumeration value="ANNOTATION_CONTENTS_FILENAME_BOX_COUNT_BOUNDING_BOX_CORNERS"/>
+          <xs:enumeration value="UECFOOD100_MULTIPLE_FOOD"/>
+          <xs:enumeration value="UECFOOD100_CATEGORY_DEFINE"/>
+          <xs:enumeration value="UECFOOD256_CATEGORY_DEFINE"/>
+          <xs:enumeration value="UECFOOD_ANNOTATION_BOUNDING_BOX"/>
+          <xs:enumeration value="OKTOBERFEST_ANNOTATION_EXTRACT"/>
+          <xs:enumeration value="UPMCFOOD101_DATA_EXTRACT"/>
+          <xs:enumeration value="VFN_ANNOTATION_EXTRACT"/>
+          <xs:enumeration value="YUMMLY66K_ANNOTATION"/>
+          <xs:enumeration value="YUMMLY28K_ANNOTATION"/>
+          <xs:enumeration value="VFN_CATEGORY_DEFINE"/>
+          <xs:enumeration value="NONE"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+    
+    <!-- Low-Level Complex Elements -->
+    <xs:element name="rootFolder">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="path"/>
+          <xs:element ref="name"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="paths">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="path" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="affectedPaths">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="path" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="actions">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="action" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="applicabilities">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="applicability" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="ignores">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="ignore" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <!-- Commonality -->
+    <xs:group name="sharedEnums">
+        <xs:sequence>
+            <xs:element ref="ignores" minOccurs="0"/>
+            <xs:element ref="applicabilities" minOccurs="0"/>
+            <xs:element ref="actions" minOccurs="1"/>
+        </xs:sequence>
+    </xs:group>
+    
+    <!-- Mid-Level Complex Elements -->
+    <xs:element name="level">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="step"/>
+          <xs:group ref="sharedEnums"/>
+         <!-- <xs:element ref="folders" minOccurs="0"/> -->
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="folder">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="paths"/>
+          <xs:group ref="sharedEnums"/>
+          <xs:element ref="levels" minOccurs="0"/>
+        <!--  <xs:element ref="folders" minOccurs="0"/> -->
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="annotationFile">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="paths" maxOccurs="unbounded"/>
+          <xs:element ref="priority"/>
+          <xs:element ref="annotationType" minOccurs="0" maxOccurs="1"/>
+          <xs:element ref="actions" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="videoFile">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="path"/>
+          <xs:element ref="affectedPaths" maxOccurs="unbounded"/> 
+          <xs:element ref="actions" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+   <!--  <xs:element name="spreadsheet">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="paths" maxOccurs="unbounded"/>
+          <xs:element ref="priority"/>
+          <xs:element ref="actions" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>  -->
+    
+    <!-- High-Level Complex Elements -->
+    <xs:element name="folders">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="folder" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="levels">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="level" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="annotationFiles">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="annotationFile" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="videoFiles">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="videoFile" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+   <!--  <xs:element name="spreadsheets">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="spreadsheet" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>  -->
+    
+     <xs:element name="template">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref="rootFolder"/>
+          <xs:element ref="folders" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element ref="levels" minOccurs="0" maxOccurs="unbounded"/> 
+          <xs:element ref="annotationFiles" minOccurs="0" maxOccurs="1"/>
+          <xs:element ref="videoFiles" minOccurs="0" maxOccurs="1"/> 
+         <!--  <xs:element ref="spreadsheets" minOccurs="0" maxOccurs="1"/>     -->
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+</xs:schema>

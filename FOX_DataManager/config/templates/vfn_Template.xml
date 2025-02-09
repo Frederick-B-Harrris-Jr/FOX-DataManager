@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///Volumes/Frederick%20Harris%20II/FOX%20Data%20Manager/config/dataset_template.xsd">
+	<rootFolder>
+		<path>/Volumes/Frederick Harris II/Dissertation Data/vfn_1_0</path>
+		<name>ViperFoodNet</name>
+	</rootFolder>
+	<folders>
+		<folder>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/vfn_1_0/Images</path>
+			</paths>
+			<actions>
+				<action>CREATE_ITEM_FROM_IMAGE</action>
+			</actions>
+			<levels>
+				<level>
+					<step>0</step>
+					<actions>
+						<action>EXTRACT_FOLDER_NAME_AS_CATEGORY</action>
+					</actions>
+				</level>
+			</levels>
+		</folder>
+	</folders>
+	<annotationFiles>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/vfn_1_0/Meta/testing.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/vfn_1_0/Meta/training.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/vfn_1_0/Meta/validation.txt</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>FILENAME_AS_DATA_SPLIT_TO_CONTENTS_FILENAME</action>
+			</actions>
+		</annotationFile>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/vfn_1_0/Meta/annotations.txt</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>VFN_ANNOTATION_EXTRACT</action>
+			</actions>
+		</annotationFile>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/vfn_1_0/Meta/category_ids.txt</path>
+			</paths>
+			<priority>2</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>VFN_CATEGORY_DEFINE</action>
+			</actions>
+		</annotationFile>
+	</annotationFiles>
+</template>			

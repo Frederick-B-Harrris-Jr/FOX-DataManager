@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///Volumes/Frederick%20Harris%20II/FOX%20Data%20Manager/config/dataset_template.xsd">
+	<rootFolder>
+		<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset</path>
+		<name>Durum_Wheat_Dataset</name>
+	</rootFolder>
+	<folders>
+		<folder>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset2-Durum Wheat Video Images</path>
+			</paths>
+			<actions>
+				<action>CREATE_FOOD_ITEM_FROM_IMAGE</action>
+				<action>FILENAME_AS_FRAME_NUMBER</action>
+			</actions>
+		</folder>
+	</folders>
+	<annotationFiles>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset3-Durum Wheat Features/Durum Wheat Features.xlsx</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>SPREADSHEET</annotationType>
+			<actions>
+				<action>DURUM_WHEAT_DATASET_PARSE</action>
+			</actions>
+		</annotationFile>
+	</annotationFiles>
+	<videoFiles>
+		<videoFile>
+			<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset1-Durum Wheat Videos/1-Vitreous Durum Wheat.avi</path>
+			<affectedPaths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset2-Durum Wheat Video Images/1-Images from Vitreous Durum Wheat</path>
+			</affectedPaths>
+			<actions>
+				<action>VIDEO_FILE_TO_IMAGE_SOURCE</action>
+			</actions>
+		</videoFile>
+		<videoFile>
+			<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset1-Durum Wheat Videos/2-Starchy Durum Wheat.avi</path>
+			<affectedPaths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset2-Durum Wheat Video Images/2-Images from Starchy Durum Wheat</path>
+			</affectedPaths>
+			<actions>
+				<action>VIDEO_FILE_TO_IMAGE_SOURCE</action>
+			</actions>
+		</videoFile>
+		<videoFile>
+			<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset1-Durum Wheat Videos/3-Foreign Matters.avi</path>
+			<affectedPaths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset2-Durum Wheat Video Images/3-Images from Foreign Matters</path>
+			</affectedPaths>
+			<actions>
+				<action>VIDEO_FILE_TO_IMAGE_SOURCE</action>
+			</actions>
+		</videoFile>
+		<videoFile>
+			<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset1-Durum Wheat Videos/4-Mixture of All Durum Wheat and Foreign Matters.avi</path>
+			<affectedPaths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset2-Durum Wheat Video Images/4-Images from Mixture of All Durum Wheat and Foreign Matters</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/Durum_Wheat_Dataset/Dataset2-Durum Wheat Video Images/5-Images form Mixture of All Durum Wheat and Foreign Matters (Labeled)</path>
+			</affectedPaths>
+			<actions>
+				<action>VIDEO_FILE_TO_IMAGE_SOURCE</action>
+			</actions>
+		</videoFile>
+	</videoFiles>
+</template>			

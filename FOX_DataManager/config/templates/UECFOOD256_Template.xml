@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///Volumes/Frederick%20Harris%20II/FOX%20Data%20Manager/config/dataset_template.xsd">
+	<rootFolder>
+		<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256</path>
+		<name>UECFOOD256</name>
+	</rootFolder>
+	<levels>
+		<level>
+			<step>0</step>
+			<applicabilities>
+				<applicability>ALL_FOLDERS</applicability>
+			</applicabilities>
+			<actions>
+				<action>EXTRACT_FOLDER_NAME_AS_CATEGORY</action>
+			</actions>
+		</level>
+		<level>
+			<step>1</step>
+			<applicabilities>
+				<applicability>ALL_FOLDERS</applicability>
+			</applicabilities>
+			<actions>
+				<action>CREATE_FOOD_ITEM_FROM_IMAGE</action>
+			</actions>
+		</level>
+	</levels>
+	<annotationFiles>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/1/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/2/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/3/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/4/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/5/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/6/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/7/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/8/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/9/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/10/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/11/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/12/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/13/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/14/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/15/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/16/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/17/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/18/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/19/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/20/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/21/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/22/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/23/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/24/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/25/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/26/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/27/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/28/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/29/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/30/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/31/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/32/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/33/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/34/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/35/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/36/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/37/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/38/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/39/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/40/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/41/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/42/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/43/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/44/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/45/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/46/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/47/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/48/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/49/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/50/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/51/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/52/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/53/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/54/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/55/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/56/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/57/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/58/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/59/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/60/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/61/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/62/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/63/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/64/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/65/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/66/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/67/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/68/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/69/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/70/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/71/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/72/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/73/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/74/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/75/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/76/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/77/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/78/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/79/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/80/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/81/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/82/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/83/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/84/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/85/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/86/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/87/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/88/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/89/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/90/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/91/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/92/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/93/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/94/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/95/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/96/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/97/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/98/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/99/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/100/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/101/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/102/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/103/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/104/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/105/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/106/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/107/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/108/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/109/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/110/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/111/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/112/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/113/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/114/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/115/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/116/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/117/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/118/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/119/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/120/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/121/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/122/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/123/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/124/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/125/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/126/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/127/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/128/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/129/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/130/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/131/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/132/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/133/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/134/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/135/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/136/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/137/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/138/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/139/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/140/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/141/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/142/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/143/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/144/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/145/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/146/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/147/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/148/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/149/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/150/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/151/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/152/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/153/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/154/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/155/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/156/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/157/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/158/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/159/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/160/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/161/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/162/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/163/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/164/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/165/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/166/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/167/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/168/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/169/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/170/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/171/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/172/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/173/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/174/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/175/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/176/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/177/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/178/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/179/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/180/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/181/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/182/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/183/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/184/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/185/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/186/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/187/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/188/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/189/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/190/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/191/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/192/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/193/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/194/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/195/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/196/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/197/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/198/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/199/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/200/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/201/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/202/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/203/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/204/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/205/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/206/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/207/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/208/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/209/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/210/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/211/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/212/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/213/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/214/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/215/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/216/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/217/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/218/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/219/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/220/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/221/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/222/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/223/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/224/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/225/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/226/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/227/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/228/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/229/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/230/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/231/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/232/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/233/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/234/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/235/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/236/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/237/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/238/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/239/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/240/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/241/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/242/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/243/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/244/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/245/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/246/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/247/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/248/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/249/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/250/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/251/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/252/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/253/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/254/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/255/bb_info.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/256/bb_info.txt</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>UECFOOD_ANNOTATION_BOUNDING_BOX</action>
+			</actions>
+		</annotationFile>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/UECFOOD256/category.txt</path>
+			</paths>
+			<priority>2</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>UECFOOD256_CATEGORY_DEFINE</action>
+			</actions>
+		</annotationFile>
+	</annotationFiles>
+</template>			

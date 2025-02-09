@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///Volumes/Frederick%20Harris%20II/FOX%20Data%20Manager/config/dataset_template.xsd">
+	<rootFolder>
+		<path>/Volumes/Frederick Harris II/Dissertation Data/ZSFooD</path>
+		<name>ZSFooD</name>
+	</rootFolder>
+	<folders>
+		<folder>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ZSFooD/train2017</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ZSFooD/val2017</path>
+			</paths>
+			<actions>
+				<action>CREATE_FOOD_ITEM_FROM_IMAGE</action>
+				<action>EXTRACT_FOLDER_NAME_CONTAINING_DATA_SPLIT</action>
+			</actions>
+		</folder>
+	</folders>
+	<annotationFiles>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/ZSFooD/annotations</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>ZSFOOD_DATA_EXTRACT</action>
+			</actions>
+		</annotationFile>
+	</annotationFiles>
+</template>			

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///Volumes/Frederick%20Harris%20II/FOX%20Data%20Manager/config/dataset_template.xsd">
+	<rootFolder>
+		<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood</path>
+		<name>EgocentricFood</name>
+	</rootFolder>
+	<folders>
+		<folder>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/1</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/2</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/3</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/4</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/5</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/6</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/7</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/8</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/9</path>
+			</paths>
+			<actions>
+				<action>CREATE_ITEM_FROM_IMAGE</action>
+				<action>EXTRACT_FOLDER_NAME_AS_CATEGORY</action>
+			</actions>
+		</folder>
+	</folders>
+	<annotationFiles>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/test_list.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/train_list.txt</path>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/val_list.txt</path>
+			</paths>
+			<priority>1</priority>
+			<annotationType>DATA_SPLIT</annotationType>
+			<actions>
+				<action>EGOCENTRIC_DATA_SPLIT_AND_BOUNDING_BOX</action>
+			</actions>
+		</annotationFile>
+		<annotationFile>
+			<paths>
+				<path>/Volumes/Frederick Harris II/Dissertation Data/EgocentricFood/category.txt</path>
+			</paths>
+			<priority>2</priority>
+			<annotationType>DEFINES_ITEM_INSTANCES</annotationType>
+			<actions>
+				<action>CATEGORY_LABEL_TO_CATEGORY_NAME</action>
+			</actions>
+		</annotationFile>
+	</annotationFiles>
+</template>			
